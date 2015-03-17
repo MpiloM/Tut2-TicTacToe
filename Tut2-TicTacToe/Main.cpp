@@ -17,13 +17,13 @@ int main()
 
 	TicTacToe Tic;
 	Tic.Instructions();
-	system("pause");
+	
 
 start:{
 	string plyr1, plyr2;
 
 	cout << "\n ============================" << endl << endl;
-	cout << "      Let The Game Bigin" << endl;
+	cout << "   >>>>The Tic Tac Toe GAME <<<<" << endl;
 	cout << " ----------------------------" << endl;
 
 	cout << " First player name: "; cin >> plyr1;
@@ -96,6 +96,6 @@ start:{
   }
 
 			cout << endl << " ============================" << endl << endl;
-			system("pause");
+			
 			return 0;
 }

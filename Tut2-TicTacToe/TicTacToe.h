@@ -14,18 +14,18 @@ using namespace std;
 class TicTacToe
 {
 private:
-	char game[3][3];
+	char game[3][3];    //defining the game array
 	bool shift(int, int);
 
 public:
 	TicTacToe();
 	void Instructions();
-	void displayGame();
-	void player1(int);
+	void displayGame();     //dispaying the game board 3 by 3
+	void player1(int);        
 	void player2(int);
-	bool Win();
+	bool Win();  
 	bool Draw();
-	void RESET();
+	void RESET();       
 };
 
 #endif

@@ -6,7 +6,7 @@ The TicTacToe Game Class
 #include "TicTacToe.h"
 
 // Constructor
-TicTacToe::TicTacToe()
+TicTacToe::TicTacToe()   // assigning letter to the boxes
 {
 
 	game[0][0] = 'A'; game[0][1] = 'B'; game[0][2] = 'C';
@@ -14,7 +14,6 @@ TicTacToe::TicTacToe()
 	game[2][0] = 'G'; game[2][1] = 'H'; game[2][2] = 'I';
 
 }
-// Game rules and instructions
 void TicTacToe::Instructions()
 {
 
@@ -23,7 +22,7 @@ void TicTacToe::Instructions()
 
 }
 // Display the board
-void TicTacToe::displayGame()
+void TicTacToe::displayGame()  // game board
 {
 	cout << endl;
 	cout << "+-----+-----+-----+" << endl;
@@ -97,7 +96,7 @@ bool TicTacToe::Draw()
 		}
 	}
 
-	if (drw == 9) 
+	if (drw == 9) // if spaces are completed on the board
 	{
 		return true; 
 	}
@@ -122,7 +121,7 @@ void TicTacToe::player1(int position)
 {
 	if (Win() != true)
 	{
-		switch (position)
+		switch (position)  // selecting spaces in the board
 		{
 		case 1:{
 			if (shift(0, 0) == true) 
@@ -223,7 +222,7 @@ void TicTacToe::player1(int position)
 			break;
 		}
 		default:{
-			cout << endl << " Invalid Move!!!" << endl;
+			cout << endl << " Invalid Move!!!" << endl;  //out of box 
 		}
 		}
 	}
@@ -345,7 +344,7 @@ void TicTacToe::player2(int position)
 // Moving to Valid Position
 bool TicTacToe::shift(int row, int column)
 {
-	if (game[row][column] == 'X' || game[row][column] == 'O')
+	if (game[row][column] == 'X' || game[row][column] == 'O') //if player selected the same position as the previous player
 	{
 		return false;
 	}
