@@ -9,9 +9,9 @@ The TicTacToe Game Class
 TicTacToe::TicTacToe()   // assigning letter to the boxes
 {
 
-	game[0][0] = 'A'; game[0][1] = 'B'; game[0][2] = 'C';
-	game[1][0] = 'D'; game[1][1] = 'E'; game[1][2] = 'F';
-	game[2][0] = 'G'; game[2][1] = 'H'; game[2][2] = 'I';
+	game[0][0] = '1'; game[0][1] = '2'; game[0][2] = '3';
+	game[1][0] = '4'; game[1][1] = '5'; game[1][2] = '6';
+	game[2][0] = '7'; game[2][1] = '8'; game[2][2] = '9';
 
 }
 void TicTacToe::Instructions()
@@ -110,9 +110,9 @@ bool TicTacToe::Draw()
 void TicTacToe::RESET()
 {
 
-	game[0][0] = 'A'; game[0][1] = 'B'; game[0][2] = 'C';
-	game[1][0] = 'D'; game[1][1] = 'E'; game[1][2] = 'F';
-	game[2][0] = 'G'; game[2][1] = 'H'; game[2][2] = 'I';
+	game[0][0] = '1'; game[0][1] = '2'; game[0][2] = '3';
+	game[1][0] = '4'; game[1][1] = '5'; game[1][2] = '6';
+	game[2][0] = '7'; game[2][1] = '8'; game[2][2] = '9';
 
 }
 
